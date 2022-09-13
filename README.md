@@ -1,13 +1,17 @@
 # babel-plugin-transform-log-comments
-Transform special comments like // > to console.* calls:
+
+Transforms special comments to console.\* calls, so that:
+
 ```javascript
 // > Start loading application...
-await appLoading()
+await appLoading();
 // > The application has been loaded.
 ```
+
 becomes:
+
 ```javascript
-console.log('Start loading application...');
+console.log("Start loading application...");
 await appLoading();
-console.log('The application has been loaded.');
+console.log("The application has been loaded.");
 ```
