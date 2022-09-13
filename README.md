@@ -1,6 +1,6 @@
-# babel-plugin-transform-log-comments
+### babel-plugin-transform-log-comments
 
-Transforms special comments to console.\* calls, so that:
+Transforms _special comments_ to console.\* calls, so that:
 
 ```javascript
 // > Start loading application...
@@ -11,7 +11,24 @@ await appLoading();
 becomes:
 
 ```javascript
-console.log("Start loading application...");
+console.log('Start loading application...');
 await appLoading();
-console.log("The application has been loaded.");
+console.log('The application has been loaded.');
+```
+
+I thought it might be a little bit prettier in some cases :man_shrugging:.
+
+# Installation
+
+`npm install babel-plugin-transform-log-comments --save-dev`
+
+Add it to your plugins array in your babel config (e.g. babel.config.js file):
+
+```javascript
+module.exports = {
+  plugins: [
+    'transform-log-comments',
+    // ...
+  ],
+};
 ```

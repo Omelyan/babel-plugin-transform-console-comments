@@ -2,16 +2,23 @@
   "name": "babel-plugin-transform-log-comments",
   "version": "1.0.0",
   "description": "Transform special comments like // > to console.* calls.",
+  "author": "Dmytro Omelyan <dima.omelyan@gmail.com> (codepen.io/Omelyan)",
+  "homepage": "https://github.com/Omelyan/babel-plugin-transform-log-comments#readme",
+  "bugs": "https://github.com/Omelyan/babel-plugin-transform-log-comments/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omelyan/babel-plugin-transform-log-comments.git"
+  },
   "keywords": [
     "babel-plugin",
+    "babel",
     "comments",
     "console"
   ],
-  "homepage": "https://github.com/Omelyan/babel-plugin-transform-log-comments#readme",
-  "bugs": "https://github.com/Omelyan/babel-plugin-transform-log-comments/issues",
-  "author": "Dmytro Omelyan <dima.omelyan@gmail.com> (codepen.io/Omelyan)",
-  "license": "MIT",
-  "main": "lib/index.js",
-  "repository": "https://github.com/Omelyan/babel-plugin-transform-log-comments.git",
-  "private": false
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "type": "commonjs",
+  "main": "lib/index.js"
 }
