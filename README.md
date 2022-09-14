@@ -1,4 +1,4 @@
-### babel-plugin-transform-log-comments
+### babel-plugin-transform-console-comments
 
 Transforms _special comments_ to console.\* calls, so that:
 
@@ -20,14 +20,14 @@ I thought it might be a little bit prettier in some cases :man_shrugging:.
 
 # Installation
 
-`npm install babel-plugin-transform-log-comments --save-dev`
+`npm install babel-plugin-transform-console-comments --save-dev`
 
 Add it to your plugins array in your babel config (e.g. babel.config.js file):
 
 ```javascript
 module.exports = {
   plugins: [
-    'transform-log-comments',
+    'transform-console-comments',
     // ...
   ],
 };
